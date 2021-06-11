@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+        }
+        .pola, .kulka, .klikM, .klikS{
+            display: flex;
+            float:left;
+            width: 50px;
+            height: 50px;
+            border: 1px black solid;
+            justify-content: center;
+            align-items: center;
+        }
+        #gra {
+            width: 480px;
+            position:absolute;
+            left: 10px;
+            top: 10px;
+        }
+        .kule, .klikk {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            border:1px black solid;
+            border-radius: 50%;
+        }
+        #losowanie {
+            left: 500px;
+            width: 70px;
+            height: 200px;
+            position: absolute;
+        }
+        .losowanie {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border:1px black solid;
+            border-radius: 50%;
+            margin: 4px;
+        }
+        #punkty {
+            position:absolute;
+            top: 20px;
+            left: 600px;
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+        }
+        #koment{
+            position: absolute;
+            top: 400px;
+            left: 600px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gra"></div>
+    <script src="dist/script.bundle.js"></script>
+</body>
+</html>
